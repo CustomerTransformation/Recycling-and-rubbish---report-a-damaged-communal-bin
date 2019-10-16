@@ -1,0 +1,16 @@
+[
+    {
+        "ID": "5a057b6099e67",
+        "Name": "RR024 - Waste Report a damaged communal bin - writes values to the table",
+        "Type": "DATABASE",
+        "LIM_id": "83ef69d1-2c5e-11e5-ad20-22000a7a05f5",
+        "Editable": true,
+        "LIM_name": "Portsmouth",
+        "Category": "RubbishRecycling",
+        "data_type": "integration",
+        "allow_offline": 0,
+        "Output_template": "{\"lookup_validation\":\"0\",\"systemID\":\"593a5fdb73ecb\",\"systemName\":\"RubbishAndRecycling\",\"query\":\"exec RepDamagedComBin\\n\\t\\t@CaseRef = {case_ref},\\n\\t\\t@Date = {current_datetime},\\n\\t\\t@BusinessName = {contact/Organisation_Name_out},\\n\\t\\t@FullName = {fullName},\\n\\t\\t@Email = {contact/Email_Address_out},\\n\\t\\t@Tel = {contact/Phone_Number_out},\\n\\t\\t@Mobile = {contact/Mobile_Number_out},\\n\\t\\t@Postcode = {business/upPostcode_out},\\n\\t\\t@UPRN = {business/uprn_out},\\n\\t\\t@Address = {business/AddrConcat},\\n\\t\\t@AddressMap = {AddressMap},\\n\\t\\t@BinDamaged = {binDamaged},\\n\\t\\t@DamageDescription = {tellUs}\",\"results_page_columns_db\":\"\",\"secure_fields_db_database\":\"\",\"escapeTokens\":\"yes\"}",
+        "log_only_on_error": 0,
+        "error_notification": "{\"LIM_id\":\"3f07ecf4-0dfa-11e2-b0b9-12313b03ed59\",\"LIM_name\":\"LIM14\",\"recipients_to\":\"Daniela.Dutu@portsmouthcc.gov.uk\"}"
+    }
+]

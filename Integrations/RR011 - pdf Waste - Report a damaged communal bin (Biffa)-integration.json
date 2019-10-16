@@ -1,0 +1,16 @@
+[
+    {
+        "ID": "59cb7dc7c84e1",
+        "Name": "RR011 - pdf Waste - Report a damaged communal bin (Biffa)",
+        "Type": "PRINTABLE",
+        "LIM_id": "83ef69d1-2c5e-11e5-ad20-22000a7a05f5",
+        "Editable": true,
+        "LIM_name": "Portsmouth",
+        "Category": "RubbishRecycling",
+        "data_type": "integration-lookup",
+        "allow_offline": 0,
+        "Output_template": "{\"lookup_validation\":\"0\",\"name\":\"{reference}\",\"remove_margins\":\"\",\"setPaperType\":\"us\",\"content\":\"<style><!--\\nbody {\\n     font-family: arial, helvetica, sans-serif;\\n}\\ntable{\\n    font-family: arial, helvetica, sans-serif;\\n}\\ntable.PCCfieldsT{\\n    width: 100%;\\n}\\n.PCCfieldsT tr td:nth-child(1) {\\n    font-family: arial, helvetica, sans-serif;\\n    width: 45%;\\n    vertical-align:top;\\n    padding: 5px 15px 5px 0px; /* top right bottom left */\\n}\\n.PCCfieldsT tr td:nth-child(2) {\\n    font-family: arial, helvetica, sans-serif;\\n    width: 55%;\\n    padding: 5px 0px;\\n    /* white-space: pre-wrap; */\\n}\\n--></style>\\n<div>{#PDF_Top_Logo}</div>\\n<div>&nbsp;<br /> &nbsp;<br /> &nbsp;</div>\\n<h1><span style=\\\"text-decoration: underline;\\\">Damaged communal bin - Biffa ({case_ref})</span></h1>\\n<h4>Summary of the form</h4>\\n<div>{#concSummaryBiffa}</div>\\n<table class=\\\"PCCfieldsT\\\">\\n<tbody>\\n<tr>\\n<td>Was the bin repairable?</td>\\n<td>{wasTheBinRepairab}</td>\\n</tr>\\n<tr>\\n<td>Comments</td>\\n<td>{#comments}</td>\\n</tr>\\n<tr>\\n<td>address from the map</td>\\n<td>{#AddressMap}</td>\\n</tr>\\n</tbody>\\n</table>\\n<div>{#carryNotes}</div>\\n<div>{#map}</div>\"}",
+        "log_only_on_error": 0,
+        "error_notification": "{\"LIM_id\":\"3f07ecf4-0dfa-11e2-b0b9-12313b03ed59\",\"LIM_name\":\"LIM14\",\"recipients_to\":\"\"}"
+    }
+]
